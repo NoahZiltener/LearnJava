@@ -16,6 +16,8 @@ public class Main {
 
         Waffen dolch =new Waffen( 10, 1, "Holz");
 
+        Material Holz = new Material( "Holz");
+
         ernst.hit(schwarzerRitter);
         ernst.printhit(schwarzerRitter);
 
@@ -41,6 +43,9 @@ public class Main {
         ernst.printhit(schwarzerRitter);
         max.print();
         jan.print();
+        System.out.println(Holz.material);
+
+
 
 
 
