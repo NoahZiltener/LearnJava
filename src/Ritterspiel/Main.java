@@ -12,7 +12,7 @@ public class Main {
 
         SchwertRitter max = new SchwertRitter(150, 19, 2, "Max");
 
-        Lanzentraeger jan = new Lanzentraeger(100, 10, 1, "Jan");
+        Lanzentraeger jan = new Lanzentraeger(50, 10, 1, "Jan");
 
         Waffen dolch = new Waffen(100, 1, "Holz", "Dolch");
 
@@ -20,8 +20,11 @@ public class Main {
 
         Ruestung eisenHelm = new Ruestung(20, 2, "EisenHelm", "Eisen");
 
-        heinrich.ruestung = eisenHelm;
-        jan.waffen = dolch;
+        Schwert langschwert = new Schwert(200, 4, "Eisen", "Langschwert", 2, 2, 10);
+
+        heinrich.setRuestung(eisenHelm);
+        jan.setWaffen(dolch);
+        max.setWaffen(langschwert);
 
 
         //ernst.printhit(schwarzerRitter);
@@ -37,6 +40,7 @@ public class Main {
 
         jan.hit(heinrich);
         jan.printhit(heinrich);
+        max.hit(jan);
 
 
 

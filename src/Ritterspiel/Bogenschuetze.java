@@ -10,24 +10,7 @@ public class Bogenschuetze extends Ritter {
 
     @Override
     public void print() {
-        System.out.println("=== " + this.name + " der Lanzenträger " + " ===");
-        System.out.println("Leben:" + this.hp);
-        System.out.println("Schaden:" + this.dmg);
-        System.out.println("Level:" + this.lvl);
-        if (this.ruestung == null) {
-            System.out.println("Keine Rüstung");
-        } else {
-
-            System.out.println("Rüstung:" + this.ruestung.name);
-
-        }
-        if (this.waffen == null){
-
-            System.out.println("Keine Waffe");
-        }
-        else{
-            System.out.println("Waffe:" + this.waffen.name);
-        }
-        System.out.println("_________________________");
+        System.out.println("=== " + this.getName() + " der Bogenschuetze " + " ===");
+    super.print();
     }
 }
