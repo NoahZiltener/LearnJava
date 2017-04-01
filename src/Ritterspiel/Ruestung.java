@@ -1,18 +1,20 @@
 package Ritterspiel;
 
 /**
- * Created by noahz on 15.03.2017.
+ * Created by noahz on 31.03.2017.
  */
-public class Waffen {
-    public int dmg;
+public class Ruestung {
+    public int hp;
     public int lvl;
     public String material;
     public String name;
 
-    public Waffen(int dmg, int lvl, String material, String name) {
-        this.dmg = dmg;
+
+    public Ruestung(int hp, int lvl, String name, String material) {
+        this.hp = hp;
         this.lvl = lvl;
         this.material = material;
         this.name = name;
     }
 }
+

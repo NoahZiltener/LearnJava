@@ -6,7 +6,7 @@ package Ritterspiel;
 public class Material {
     public String material;
 
-    public Material( String material) {
+    public Material(String material) {
         this.material = material;
     }
 }
