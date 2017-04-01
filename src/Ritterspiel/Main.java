@@ -7,17 +7,17 @@ public class Main {
 
         //Materialien
 
-        Material holz = new Material("Holz");
+        Material holz = new Material("Holz", 1, "braun");
 
-        Material eisen = new Material("Eisen");
+        Material eisen = new Material("Eisen", 4, "grau");
 
-        Material diamant = new Material("Diamant");
+        Material diamant = new Material("Diamant", 3, "balu");
 
-        Material gold = new Material("Gold");
+        Material gold = new Material("Gold", 5, "gelb");
 
-        Material adamant = new Material("Adamant");
+        Material adamant = new Material("Adamant",2,"grau");
 
-        Material obsidian = new Material("Obsidian");
+        Material obsidian = new Material("Obsidian", 10, "schwarz");
 
         //Waffen & Rüstungen
 
@@ -76,7 +76,7 @@ public class Main {
         ernst.printhit(schwarzerRitter);
         max.print();
         jan.print();
-        System.out.println(holz.material);
+        System.out.println(holz.getMaterial());
         System.out.println(eisenHelm.name);
 
 
