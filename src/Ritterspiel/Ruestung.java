@@ -6,11 +6,11 @@ package Ritterspiel;
 public class Ruestung {
     public int hp;
     public int lvl;
-    public String material;
+    public Material material;
     public String name;
 
 
-    public Ruestung(int hp, int lvl, String name, String material) {
+    public Ruestung(int hp, int lvl, String name, Material material) {
         this.hp = hp;
         this.lvl = lvl;
         this.material = material;
