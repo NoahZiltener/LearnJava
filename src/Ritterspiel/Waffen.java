@@ -3,7 +3,7 @@ package Ritterspiel;
 /**
  * Created by noahz on 15.03.2017.
  */
-public class Waffen {
+public abstract class Waffen {
     private int dmg;
     private int lvl;
     private Material material;

@@ -1,6 +1,6 @@
 package Ritterspiel;
 
-public class Ritter {
+public abstract class Ritter {
     private int hp;
     private int dmg;
     private int lvl;

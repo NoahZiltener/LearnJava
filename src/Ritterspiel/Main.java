@@ -23,9 +23,11 @@ public class Main {
 
         //Waffen & Rüstungen
 
-        Waffen dolch = new Waffen(100, 1, holz, "Dolch");
+        Dolch dolch = new Dolch(100, 1, holz, "Dolch", 20, 1);
 
         Schwert langschwert = new Schwert(200, 4, obsidian, "Langschwert", 2, 2, 10);
+
+        Schwert schwert = new Schwert(100, 1, eisen, "Schwert", 1, 2, 5);
 
         Ruestung eisenHelm = new Ruestung(20, 2, "EisenHelm", eisen);
 
@@ -41,7 +43,7 @@ public class Main {
 
         SchwertRitter schwarzerRitter = new SchwertRitter(120, 25, 3, "Schwarzer_Ritter", goldenerBrustpanzer, langschwert);
 
-        Ritter ernst = new Ritter(100, 10, 3, "Ernst", eisenHelm, dolch);
+        SchwertRitter ernst = new SchwertRitter(100, 10, 3, "Ernst", eisenHelm, schwert);
 
         SchwertRitter max = new SchwertRitter(150, 19, 2, "Max", goldenerBrustpanzer, langschwert);
 
