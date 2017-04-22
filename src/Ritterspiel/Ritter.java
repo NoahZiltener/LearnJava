@@ -15,62 +15,55 @@ public class Ritter {
         this.dmg = dmg;
         this.lvl = lvl;
         this.name = name;
-        print();
     }
 
     public Ritter(int hp, int dmg, int lvl, String name, Ruestung ruestung, Waffen waffen) {
-
         this.hp = hp;
         this.dmg = dmg;
         this.lvl = lvl;
         this.name = name;
         this.ruestung = ruestung;
         this.waffen = waffen;
-        print();
     }
 
     public void hit(Ritter gegner) {
 
-        dmg = this.dmg;
+        int damage = this.getDmg();
 
         if (this.waffen != null) {
-            dmg += this.waffen.dmg;
+            damage += this.waffen.dmg; //TODO: Getter / Setter in Waffen
         }
         if (gegner.getRuestung() != null) {
 
-            dmg -= gegner.getRuestung().hp;
+            damage -= gegner.getRuestung().hp; //TODO: Getter / Setter in Waffen
         }
-        if (dmg > 0) {
-            gegner.setHp(gegner.getHp()- dmg);
+        if (damage > 0) {
+            gegner.setHp(gegner.getHp() - damage);
         }
-
-
     }
 
     public void print() {
 
-        System.out.println("Leben:" + this.hp);
-        System.out.println("Schaden:" + this.dmg);
-        System.out.println("Level:" + this.lvl);
+        System.out.println("Leben:" + this.getHp());
+        System.out.println("Schaden:" + this.getDmg());
+        System.out.println("Level:" + this.getLvl());
+
         if (this.ruestung == null) {
             System.out.println("Keine Rüstung");
         } else {
-
-            System.out.println("Rüstung:" + this.ruestung.name);
-
+            System.out.println("Rüstung:" + this.ruestung.name); //TODO: Getter / Setter in Rüstung
         }
-        if (this.waffen == null){
 
+        if (this.waffen == null) {
             System.out.println("Keine Waffe");
-        }
-        else{
-            System.out.println("Waffe:" + this.waffen.name);
+        } else {
+            System.out.println("Waffe:" + this.waffen.name); //TODO: Getter / Setter in Waffen
         }
         System.out.println("_________________________");
     }
 
     public void printhit(Ritter gegner) {
-        System.out.println(this.name + " sclägt " + gegner.name + " Restliche Lebenspunkte " + gegner.hp);
+        System.out.println(this.getName() + " schlägt " + gegner.getName() + " Restliche Lebenspunkte " + gegner.getHp());
 
     }
 
