@@ -5,18 +5,13 @@ package Ritterspiel;
  */
 
 public class SchwertRitter extends Ritter {
-    String leder; //TODO: private
-    //TODO: Schwert schwert
 
     public SchwertRitter(int hp, int dmg, int lvl, String name) {
         super(hp, dmg, lvl, name);
-
     }
 
-    public SchwertRitter(int hp, int dmg, int lvl, String name, Schwert schwert) {
-        super(hp, dmg, lvl, name);
-        //TODO: schwert initialisieren
-
+    public SchwertRitter(int hp, int dmg, int lvl, String name, Ruestung ruestung, Schwert schwert) {
+        super(hp, dmg, lvl, name, ruestung, schwert);
     }
 
     @Override

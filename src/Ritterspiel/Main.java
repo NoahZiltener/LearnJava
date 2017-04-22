@@ -77,7 +77,7 @@ public class Main {
         max.print();
         jan.print();
         System.out.println(holz.getMaterial());
-        System.out.println(eisenHelm.name);
+        System.out.println(eisenHelm.getName());
 
 
     }

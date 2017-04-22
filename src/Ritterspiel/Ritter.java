@@ -31,11 +31,11 @@ public class Ritter {
         int damage = this.getDmg();
 
         if (this.waffen != null) {
-            damage += this.waffen.dmg; //TODO: Getter / Setter in Waffen
+            damage += this.waffen.getDmg();
         }
         if (gegner.getRuestung() != null) {
 
-            damage -= gegner.getRuestung().hp; //TODO: Getter / Setter in Waffen
+            damage -= gegner.getRuestung().getHp();
         }
         if (damage > 0) {
             gegner.setHp(gegner.getHp() - damage);
@@ -51,13 +51,13 @@ public class Ritter {
         if (this.ruestung == null) {
             System.out.println("Keine Rüstung");
         } else {
-            System.out.println("Rüstung:" + this.ruestung.name); //TODO: Getter / Setter in Rüstung
+            System.out.println("Rüstung:" + this.ruestung.getName());
         }
 
         if (this.waffen == null) {
             System.out.println("Keine Waffe");
         } else {
-            System.out.println("Waffe:" + this.waffen.name); //TODO: Getter / Setter in Waffen
+            System.out.println("Waffe:" + this.waffen.getName());
         }
         System.out.println("_________________________");
     }
