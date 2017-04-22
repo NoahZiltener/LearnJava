@@ -39,6 +39,9 @@ public class Ritter {
         if (damage > 0) {
             gegner.setHp(gegner.getHp() - damage);
         }
+        if (gegner.getHp() < 0) {
+            gegner.setHp(0);
+        }
     }
 
     public void print() {
