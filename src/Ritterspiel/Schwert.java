@@ -5,6 +5,6 @@ package Ritterspiel;
  */
 public class Schwert extends Waffen {
     public Schwert(int dmg, int lvl, Material material, String name, int anzahlhaende, float laenge, float gewicht) {
-        super(dmg, lvl, material, name);
+        super(dmg, lvl, material, name); //TODO: anzahlheande, laenge und gewicht im konstruktor hinzufügen
     }
 }
