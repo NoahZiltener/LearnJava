@@ -10,11 +10,9 @@ public class Material {
 
     public Material(String material, float gewicht, String farbe) {
         this.material = material;
-
         this.gewicht = gewicht;
         this.material = material;
         this.farbe = farbe;
-
     }
 
     public String getMaterial() {

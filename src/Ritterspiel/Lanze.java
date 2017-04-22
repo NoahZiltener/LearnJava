@@ -3,12 +3,12 @@ package Ritterspiel;
 /**
  * Created by noahz on 15.03.2017.
  */
-public class Schwert extends Waffen {
+public class Lanze extends Waffen {
     private int anzahlheande;
     private int laenge;
     private float gewicht;
 
-    public Schwert(int dmg, int lvl, Material material, String name, int anzahlhaende, int laenge, float gewicht) {
+    public Lanze(int dmg, int lvl, Material material, String name, int anzahlhaende, int laenge, float gewicht) {
         super(dmg, lvl, material, name);
         this.anzahlheande = anzahlhaende;
         this.laenge = laenge;

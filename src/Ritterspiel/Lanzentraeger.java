@@ -8,8 +8,8 @@ public class Lanzentraeger extends Ritter {
         super(hp, dmg, lvl, name);
     }
 
-    public Lanzentraeger(int hp, int dmg, int lvl, String name, String lederruestung, String lanze) {
-        super(hp, dmg, lvl, name);
+    public Lanzentraeger(int hp, int dmg, int lvl, String name, Ruestung ruestung, Lanze lanze) {
+        super(hp, dmg, lvl, name, ruestung, lanze);
     }
 
 

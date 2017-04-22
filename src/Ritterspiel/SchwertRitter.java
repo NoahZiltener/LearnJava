@@ -6,10 +6,6 @@ package Ritterspiel;
 
 public class SchwertRitter extends Ritter {
 
-    public SchwertRitter(int hp, int dmg, int lvl, String name) {
-        super(hp, dmg, lvl, name);
-    }
-
     public SchwertRitter(int hp, int dmg, int lvl, String name, Ruestung ruestung, Schwert schwert) {
         super(hp, dmg, lvl, name, ruestung, schwert);
     }
