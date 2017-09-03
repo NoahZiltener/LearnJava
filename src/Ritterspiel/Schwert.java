@@ -10,9 +10,9 @@ public class Schwert extends Waffen {
 
     public Schwert(int dmg, int lvl, Material material, String name, int anzahlhaende, int laenge, float gewicht) {
         super(dmg, lvl, material, name);
-        this.anzahlheande = anzahlhaende;
-        this.laenge = laenge;
-        this.gewicht = gewicht;
+        this.setAnzahlheande(anzahlhaende);
+        this.setLaenge(laenge);
+        this.setGewicht(gewicht);
     }
 
     public int getAnzahlheande() {

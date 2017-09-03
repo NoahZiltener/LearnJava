@@ -11,10 +11,10 @@ public class Ruestung {
 
 
     public Ruestung(int hp, int lvl, String name, Material material) {
-        this.hp = hp;
-        this.lvl = lvl;
-        this.material = material;
-        this.name = name;
+        this.setHp(hp);
+        this.setLvl(lvl);
+        this.setMaterial(material);
+        this.setName(name);
     }
 
     public int getHp() {

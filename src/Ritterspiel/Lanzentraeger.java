@@ -12,11 +12,8 @@ public class Lanzentraeger extends Ritter {
         super(hp, dmg, lvl, name, ruestung, lanze);
     }
 
-
-
     @Override
     public void print() {
-
 
         System.out.println("=== " + this.getName() + " der Lanzenträger " + " ===");
         super.print();

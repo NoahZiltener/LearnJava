@@ -11,6 +11,6 @@ public class Bogenschuetze extends Ritter {
     @Override
     public void print() {
         System.out.println("=== " + this.getName() + " der Bogenschuetze " + " ===");
-    super.print();
+        super.print();
     }
 }

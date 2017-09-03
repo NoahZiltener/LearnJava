@@ -13,6 +13,6 @@ public class SchwertRitter extends Ritter {
     @Override
     public void print() {
         System.out.println("=== " + this.getName() + " der Schwert Ritter " + " ===");
-    super.print();
+        super.print();
     }
 }

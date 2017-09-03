@@ -11,8 +11,8 @@ public class Dolch extends Waffen {
     public Dolch(int dmg, int lvl, Material material, String name, int laenge, float gewicht) {
         super(dmg, lvl, material, name);
 
-        this.laenge = laenge;
-        this.gewicht = gewicht;
+        this.setLaenge(laenge);
+        this.setGewicht(gewicht);
     }
 
     public int getLaenge() {

@@ -10,9 +10,8 @@ public class Fernkampfwaffe extends Waffen {
     public Fernkampfwaffe(int dmg, int lvl, Material material, String name, int reichweite, float gewicht) {
         super(dmg, lvl, material, name);
 
-        this.reichweite = reichweite;
-        this.gewicht = gewicht;
-
+        this.setReichweite(reichweite);
+        this.setGewicht(gewicht);
     }
 
     public int getReichweite() {

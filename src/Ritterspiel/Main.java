@@ -2,7 +2,6 @@ package Ritterspiel;
 
 public class Main {
 
-
     public static void main(String[] args) {
 
         //Materialien
@@ -15,7 +14,7 @@ public class Main {
 
         Material gold = new Material("Gold", 5, "gelb");
 
-        Material adamant = new Material("Adamant",2,"grau");
+        Material adamant = new Material("Adamant", 2, "grau");
 
         Material obsidian = new Material("Obsidian", 10, "schwarz");
 
@@ -52,45 +51,21 @@ public class Main {
         Bogenschuetze hans = new Bogenschuetze(150, 20, 2, "Hans", lederweste, obsidianBogen);
 
 
-
-
-
-
-
-
+        //Ausrüsten
         heinrich.setRuestung(eisenHelm);
         jan.setWaffen(dolch);
         max.setWaffen(langschwert);
 
-
-        //ernst.printhit(schwarzerRitter);
-
-
-       // max.printhit(ernst);
-
-
-        //heinrich.printhit(schwarzerRitter);
-
-
-        //schwarzerRitter.printhit(jan);
-
+        //Logik
         jan.hit(heinrich);
         jan.printhit(heinrich);
         max.hit(jan);
-
-
-
-
         schwarzerRitter.print();
         heinrich.print();
         ernst.print();
         ernst.printhit(schwarzerRitter);
         max.print();
         jan.print();
-        System.out.println(holz.getMaterial());
-        System.out.println(eisenHelm.getName());
-
-
+        System.out.println(obsidianBogen.getGewicht());
     }
-
 }

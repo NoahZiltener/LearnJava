@@ -10,19 +10,19 @@ public abstract class Ritter {
 
 
     public Ritter(int hp, int dmg, int lvl, String name) {
-        this.hp = hp;
-        this.dmg = dmg;
-        this.lvl = lvl;
-        this.name = name;
+        this.setHp(hp);
+        this.setDmg(dmg);
+        this.setLvl(lvl);
+        this.setName(name);
     }
 
     public Ritter(int hp, int dmg, int lvl, String name, Ruestung ruestung, Waffen waffen) {
-        this.hp = hp;
-        this.dmg = dmg;
-        this.lvl = lvl;
-        this.name = name;
-        this.ruestung = ruestung;
-        this.waffen = waffen;
+        this.setHp(hp);
+        this.setDmg(dmg);
+        this.setLvl(lvl);
+        this.setName(name);
+        this.setRuestung(ruestung);
+        this.setWaffen(waffen);
     }
 
     public void hit(Ritter gegner) {
@@ -32,13 +32,15 @@ public abstract class Ritter {
         if (this.waffen != null) {
             damage += this.waffen.getDmg();
         }
-        if (gegner.getRuestung() != null) {
 
+        if (gegner.getRuestung() != null) {
             damage -= gegner.getRuestung().getHp();
         }
+
         if (damage > 0) {
             gegner.setHp(gegner.getHp() - damage);
         }
+
         if (gegner.getHp() < 0) {
             gegner.setHp(0);
         }
